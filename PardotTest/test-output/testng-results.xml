@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="129544" started-at="2016-04-28T08:27:18Z" finished-at="2016-04-28T08:29:28Z">
+    <groups>
+    </groups>
+    <test name="createListWithUsedName" duration-ms="53032" started-at="2016-04-28T08:27:18Z" finished-at="2016-04-28T08:28:11Z">
+      <class name="com.pardot.ListsTestCases">
+        <test-method status="PASS" signature="startingPoint()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="startingPoint" is-config="true" duration-ms="8788" started-at="2016-04-28T01:27:18Z" finished-at="2016-04-28T01:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startingPoint -->
+        <test-method status="PASS" signature="goBackToListsPage()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="goBackToListsPage" is-config="true" duration-ms="479" started-at="2016-04-28T01:27:27Z" finished-at="2016-04-28T01:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBackToListsPage -->
+        <test-method status="PASS" signature="createListSuccessfully()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="createListSuccessfully" duration-ms="7685" started-at="2016-04-28T01:27:28Z" finished-at="2016-04-28T01:27:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createListSuccessfully -->
+        <test-method status="PASS" signature="goBackToListsPage()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="goBackToListsPage" is-config="true" duration-ms="1750" started-at="2016-04-28T01:27:35Z" finished-at="2016-04-28T01:27:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBackToListsPage -->
+        <test-method status="PASS" signature="duplicateListNameWarning()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="duplicateListNameWarning" duration-ms="11166" started-at="2016-04-28T01:27:37Z" depends-on-methods="com.pardot.ListsTestCases.createListSuccessfully" finished-at="2016-04-28T01:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- duplicateListNameWarning -->
+        <test-method status="PASS" signature="goBackToListsPage()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="goBackToListsPage" is-config="true" duration-ms="545" started-at="2016-04-28T01:27:48Z" finished-at="2016-04-28T01:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBackToListsPage -->
+        <test-method status="PASS" signature="editTheListName()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="editTheListName" duration-ms="9618" started-at="2016-04-28T01:27:49Z" depends-on-methods="com.pardot.ListsTestCases.duplicateListNameWarning" finished-at="2016-04-28T01:27:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editTheListName -->
+        <test-method status="PASS" signature="goBackToListsPage()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="goBackToListsPage" is-config="true" duration-ms="2099" started-at="2016-04-28T01:27:58Z" finished-at="2016-04-28T01:28:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBackToListsPage -->
+        <test-method status="PASS" signature="createTheListWithTheUsedName()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="createTheListWithTheUsedName" duration-ms="7853" started-at="2016-04-28T01:28:01Z" depends-on-methods="com.pardot.ListsTestCases.editTheListName" finished-at="2016-04-28T01:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTheListWithTheUsedName -->
+        <test-method status="PASS" signature="finishingPoint()[pri:0, instance:com.pardot.ListsTestCases@614b5446]" name="finishingPoint" is-config="true" duration-ms="3025" started-at="2016-04-28T01:28:08Z" finished-at="2016-04-28T01:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishingPoint -->
+      </class> <!-- com.pardot.ListsTestCases -->
+    </test> <!-- createListWithUsedName -->
+    <test name="verifyListContainsAddedProspect" duration-ms="30856" started-at="2016-04-28T08:28:11Z" finished-at="2016-04-28T08:28:42Z">
+      <class name="com.pardot.ProspectsTestCases">
+        <test-method status="PASS" signature="startingPoint()[pri:0, instance:com.pardot.ProspectsTestCases@2588b2da]" name="startingPoint" is-config="true" duration-ms="9051" started-at="2016-04-28T01:28:11Z" finished-at="2016-04-28T01:28:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startingPoint -->
+        <test-method status="PASS" signature="addProspect()[pri:0, instance:com.pardot.ProspectsTestCases@2588b2da]" name="addProspect" duration-ms="3545" started-at="2016-04-28T01:28:21Z" finished-at="2016-04-28T01:28:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProspect -->
+        <test-method status="PASS" signature="addListToPrsp()[pri:0, instance:com.pardot.ProspectsTestCases@2588b2da]" name="addListToPrsp" duration-ms="16873" started-at="2016-04-28T01:28:24Z" depends-on-methods="com.pardot.ProspectsTestCases.addProspect" finished-at="2016-04-28T01:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListToPrsp -->
+        <test-method status="PASS" signature="finishingPoint()[pri:0, instance:com.pardot.ProspectsTestCases@2588b2da]" name="finishingPoint" is-config="true" duration-ms="1383" started-at="2016-04-28T01:28:41Z" finished-at="2016-04-28T01:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishingPoint -->
+      </class> <!-- com.pardot.ProspectsTestCases -->
+    </test> <!-- verifyListContainsAddedProspect -->
+    <test name="test3" duration-ms="15558" started-at="2016-04-28T08:28:42Z" finished-at="2016-04-28T08:28:58Z">
+      <class name="com.pardot.ListsTestCases">
+        <test-method status="PASS" signature="startingPoint()[pri:0, instance:com.pardot.ListsTestCases@5e681ff4]" name="startingPoint" is-config="true" duration-ms="7716" started-at="2016-04-28T01:28:42Z" finished-at="2016-04-28T01:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startingPoint -->
+        <test-method status="PASS" signature="goBackToListsPage()[pri:0, instance:com.pardot.ListsTestCases@5e681ff4]" name="goBackToListsPage" is-config="true" duration-ms="468" started-at="2016-04-28T01:28:50Z" finished-at="2016-04-28T01:28:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBackToListsPage -->
+        <test-method status="PASS" signature="findAddedList()[pri:0, instance:com.pardot.ListsTestCases@5e681ff4]" name="findAddedList" duration-ms="6902" started-at="2016-04-28T01:28:51Z" finished-at="2016-04-28T01:28:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAddedList -->
+        <test-method status="PASS" signature="finishingPoint()[pri:0, instance:com.pardot.ListsTestCases@5e681ff4]" name="finishingPoint" is-config="true" duration-ms="470" started-at="2016-04-28T01:28:57Z" finished-at="2016-04-28T01:28:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishingPoint -->
+      </class> <!-- com.pardot.ListsTestCases -->
+    </test> <!-- test3 -->
+    <test name="sending Email" duration-ms="30055" started-at="2016-04-28T08:28:58Z" finished-at="2016-04-28T08:29:28Z">
+      <class name="com.pardot.EmailsTestCases">
+        <test-method status="PASS" signature="statringpoint()[pri:0, instance:com.pardot.EmailsTestCases@6c2e1e17]" name="statringpoint" is-config="true" duration-ms="8134" started-at="2016-04-28T01:28:58Z" finished-at="2016-04-28T01:29:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statringpoint -->
+        <test-method status="PASS" signature="setEmail()[pri:0, instance:com.pardot.EmailsTestCases@6c2e1e17]" name="setEmail" duration-ms="9995" started-at="2016-04-28T01:29:06Z" finished-at="2016-04-28T01:29:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setEmail -->
+        <test-method status="PASS" signature="sendEmail()[pri:0, instance:com.pardot.EmailsTestCases@6c2e1e17]" name="sendEmail" duration-ms="9973" started-at="2016-04-28T01:29:16Z" depends-on-methods="com.pardot.EmailsTestCases.setEmail" finished-at="2016-04-28T01:29:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmail -->
+        <test-method status="PASS" signature="finishingPoint()[pri:0, instance:com.pardot.EmailsTestCases@6c2e1e17]" name="finishingPoint" is-config="true" duration-ms="1950" started-at="2016-04-28T01:29:26Z" finished-at="2016-04-28T01:29:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishingPoint -->
+      </class> <!-- com.pardot.EmailsTestCases -->
+    </test> <!-- sending Email -->
+  </suite> <!-- Suite -->
+</testng-results>

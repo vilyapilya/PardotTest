@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="createListWithUsedName">
+    <classes>
+      <class name="com.pardot.ListsTestCases">
+        <methods>
+          <include name="createListSuccessfully"/>
+          <include name="duplicateListNameWarning"/>
+          <include name="editTheListName"/>
+          <include name="createTheListWithTheUsedName"/>
+          <exclude name="findAddedList"/>
+        </methods>
+      </class> <!-- com.pardot.ListsTestCases -->
+    </classes>
+  </test> <!-- createListWithUsedName -->
+  <test name="verifyListContainsAddedProspect">
+    <classes>
+      <class name="com.pardot.ListsTestCases">
+        <methods>
+          <exclude name="createListSuccessfully"/>
+          <exclude name="duplicateListNameWarning"/>
+          <exclude name="editTheListName"/>
+          <exclude name="createTheListWithTheUsedName"/>
+          <exclude name="findAddedList"/>
+        </methods>
+      </class> <!-- com.pardot.ListsTestCases -->
+      <class name="com.pardot.ProspectsTestCases"/>
+    </classes>
+  </test> <!-- verifyListContainsAddedProspect -->
+  <test name="test3">
+    <classes>
+      <class name="com.pardot.ListsTestCases">
+        <methods>
+          <include name="findAddedList"/>
+          <exclude name="createListSuccessfully"/>
+          <exclude name="duplicateListNameWarning"/>
+          <exclude name="editTheListName"/>
+          <exclude name="createTheListWithTheUsedName"/>
+        </methods>
+      </class> <!-- com.pardot.ListsTestCases -->
+    </classes>
+  </test> <!-- test3 -->
+  <test name="sending Email">
+    <classes>
+      <class name="com.pardot.EmailsTestCases"/>
+    </classes>
+  </test> <!-- sending Email -->
+</suite> <!-- Failed suite [Suite] -->

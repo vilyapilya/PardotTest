@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.ProspectsTestCases" hash-for-method="addListToPrsp">addListToPrsp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.ProspectsTestCases" hash-for-method="addProspect">addProspect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.ListsTestCases" hash-for-method="createListSuccessfully">createListSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.ListsTestCases" hash-for-method="createTheListWithTheUsedName">createTheListWithTheUsedName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.ListsTestCases" hash-for-method="duplicateListNameWarning">duplicateListNameWarning</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.ListsTestCases" hash-for-method="editTheListName">editTheListName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.ListsTestCases" hash-for-method="findAddedList">findAddedList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.EmailsTestCases" hash-for-method="sendEmail">sendEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pardot.EmailsTestCases" hash-for-method="setEmail">setEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pardot.EmailsTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendEmail">
+                  </a> <!-- sendEmail -->
+                  <span class="method-name">sendEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setEmail">
+                  </a> <!-- setEmail -->
+                  <span class="method-name">setEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pardot.ListsTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createListSuccessfully">
+                  </a> <!-- createListSuccessfully -->
+                  <span class="method-name">createListSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createTheListWithTheUsedName">
+                  </a> <!-- createTheListWithTheUsedName -->
+                  <span class="method-name">createTheListWithTheUsedName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="duplicateListNameWarning">
+                  </a> <!-- duplicateListNameWarning -->
+                  <span class="method-name">duplicateListNameWarning</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editTheListName">
+                  </a> <!-- editTheListName -->
+                  <span class="method-name">editTheListName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAddedList">
+                  </a> <!-- findAddedList -->
+                  <span class="method-name">findAddedList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pardot.ProspectsTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addListToPrsp">
+                  </a> <!-- addListToPrsp -->
+                  <span class="method-name">addListToPrsp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProspect">
+                  </a> <!-- addProspect -->
+                  <span class="method-name">addProspect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/vilya/workspace/Pardot/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;createListWithUsedName&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pardot.ListsTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createListSuccessfully&quot;/&gt;
+          &lt;include name=&quot;duplicateListNameWarning&quot;/&gt;
+          &lt;include name=&quot;editTheListName&quot;/&gt;
+          &lt;include name=&quot;createTheListWithTheUsedName&quot;/&gt;
+          &lt;exclude name=&quot;findAddedList&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.pardot.ListsTestCases --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- createListWithUsedName --&gt;
+  &lt;test name=&quot;verifyListContainsAddedProspect&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pardot.ListsTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;createListSuccessfully&quot;/&gt;
+          &lt;exclude name=&quot;duplicateListNameWarning&quot;/&gt;
+          &lt;exclude name=&quot;editTheListName&quot;/&gt;
+          &lt;exclude name=&quot;createTheListWithTheUsedName&quot;/&gt;
+          &lt;exclude name=&quot;findAddedList&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.pardot.ListsTestCases --&gt;
+      &lt;class name=&quot;com.pardot.ProspectsTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- verifyListContainsAddedProspect --&gt;
+  &lt;test name=&quot;test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pardot.ListsTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;findAddedList&quot;/&gt;
+          &lt;exclude name=&quot;createListSuccessfully&quot;/&gt;
+          &lt;exclude name=&quot;duplicateListNameWarning&quot;/&gt;
+          &lt;exclude name=&quot;editTheListName&quot;/&gt;
+          &lt;exclude name=&quot;createTheListWithTheUsedName&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.pardot.ListsTestCases --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test3 --&gt;
+  &lt;test name=&quot;sending Email&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pardot.EmailsTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sending Email --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">createListWithUsedName (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">verifyListContainsAddedProspect (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sending Email (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addListToPrsp')
+data.setCell(0, 2, 'com.pardot.ProspectsTestCases')
+data.setCell(0, 3, 16873);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'duplicateListNameWarning')
+data.setCell(1, 2, 'com.pardot.ListsTestCases')
+data.setCell(1, 3, 11166);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'setEmail')
+data.setCell(2, 2, 'com.pardot.EmailsTestCases')
+data.setCell(2, 3, 9995);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sendEmail')
+data.setCell(3, 2, 'com.pardot.EmailsTestCases')
+data.setCell(3, 3, 9973);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'editTheListName')
+data.setCell(4, 2, 'com.pardot.ListsTestCases')
+data.setCell(4, 3, 9618);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createTheListWithTheUsedName')
+data.setCell(5, 2, 'com.pardot.ListsTestCases')
+data.setCell(5, 3, 7853);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createListSuccessfully')
+data.setCell(6, 2, 'com.pardot.ListsTestCases')
+data.setCell(6, 3, 7685);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'findAddedList')
+data.setCell(7, 2, 'com.pardot.ListsTestCases')
+data.setCell(7, 3, 6902);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addProspect')
+data.setCell(8, 2, 'com.pardot.ProspectsTestCases')
+data.setCell(8, 3, 3545);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.pardot.ListsTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createListSuccessfully</span>
+                <br/>
+                <span class="ignored-method-name">createTheListWithTheUsedName</span>
+                <br/>
+                <span class="ignored-method-name">createListSuccessfully</span>
+                <br/>
+                <span class="ignored-method-name">createTheListWithTheUsedName</span>
+                <br/>
+                <span class="ignored-method-name">duplicateListNameWarning</span>
+                <br/>
+                <span class="ignored-method-name">duplicateListNameWarning</span>
+                <br/>
+                <span class="ignored-method-name">editTheListName</span>
+                <br/>
+                <span class="ignored-method-name">editTheListName</span>
+                <br/>
+                <span class="ignored-method-name">findAddedList</span>
+                <br/>
+                <span class="ignored-method-name">findAddedList</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pardot.ListsTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startingPoint</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">goBackToListsPage</span>
+                <span class="method-start">8795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createListSuccessfully</span>
+                <span class="method-start">9275 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goBackToListsPage</span>
+                <span class="method-start">16963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">duplicateListNameWarning</span>
+                <span class="method-start">18713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goBackToListsPage</span>
+                <span class="method-start">29880 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editTheListName</span>
+                <span class="method-start">30425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goBackToListsPage</span>
+                <span class="method-start">40045 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createTheListWithTheUsedName</span>
+                <span class="method-start">42144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">finishingPoint</span>
+                <span class="method-start">49997 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pardot.ProspectsTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startingPoint</span>
+                <span class="method-start">53053 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addProspect</span>
+                <span class="method-start">62104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addListToPrsp</span>
+                <span class="method-start">65651 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">finishingPoint</span>
+                <span class="method-start">82525 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pardot.ListsTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startingPoint</span>
+                <span class="method-start">83916 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">goBackToListsPage</span>
+                <span class="method-start">91632 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAddedList</span>
+                <span class="method-start">92100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">finishingPoint</span>
+                <span class="method-start">99003 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pardot.EmailsTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">statringpoint</span>
+                <span class="method-start">99481 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">setEmail</span>
+                <span class="method-start">107615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendEmail</span>
+                <span class="method-start">117611 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">finishingPoint</span>
+                <span class="method-start">127585 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
